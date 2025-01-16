@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CIAAN Browser - Fast and Secure">
+    <title>CIAAN</title>
+    <style>
+        /* Basic Reset and Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #121212; /* Dark background */
+            color: #e0e0e0; /* Light grey text for readability */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            overflow: hidden;
+            animation: fadeInBackground 1.5s ease-out;
+        }
+
+        header {
+            margin-bottom: 20px;
+            animation: slideIn 1s ease-out;
+        }
+
+        header h1 {
+            font-family: 'Arial Black', sans-serif;
+            font-size: 4em;
+            letter-spacing: 8px;
+            color: #fff; /* White color for the header text */
+            text-transform: uppercase;
+            animation: pulse 1.5s infinite alternate, fadeInText 1.5s ease-out;
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5); /* Subtle dark shadow */
+        }
+
+        /* Logo Styles */
+        .logo {
+            max-width: 250px;
+            height: auto;
+            margin-top: 20px;
+            animation: logoAnimation 2s ease-out forwards;
+        }
+
+        /* Button Styling */
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            margin-top: 30px;
+            background-color: #333; /* Dark button background */
+            color: white;
+            text-decoration: none;
+            font-size: 1.5em;
+            font-weight: bold;
+            border-radius: 50px;
+            transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            animation: fadeUp 1.5s ease-out 0.5s, buttonHover 2s infinite alternate;
+        }
+
+        .download-btn:hover {
+            background-color: #555; /* Slightly lighter background on hover */
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* ABOUT CIAAN section */
+        .about-section {
+            margin-top: 40px;
+            background-color: #222; /* Darker background for the about section */
+            color: #ddd; /* Lighter text for readability */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1.5s ease-out 1.2s forwards; /* Fade-in and slide-up animation */
+        }
+
+        .about-section h2 {
+            font-size: 2em;
+            color: #fff;
+            margin-bottom: 10px;
+            animation: fadeInText 1.5s ease-out 1.2s forwards;
+        }
+
+        .about-section p {
+            font-size: 1.2em;
+            animation: fadeInText 1.5s ease-out 1.5s forwards;
+        }
+
+        /* Animations */
+        @keyframes fadeInBackground {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateY(-30px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.1); }
+        }
+
+        @keyframes fadeInText {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes logoAnimation {
+            0% { transform: scale(0.7); opacity: 0; }
+            50% { transform: scale(1.05); opacity: 0.7; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        @keyframes fadeUp {
+            0% { opacity: 0; transform: translateY(10px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes buttonHover {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>CIAAN</h1>
+    </header>
+
+    <div class="content">
+        <img src="Untitled(1).png" alt="CIAAN Logo" class="logo">
+        <a href="CIAAN.zip" class="download-btn" download>Download CIAAN</a>
+    </div>
+
+    <!-- About CIAAN Section -->
+    <div class="about-section">
+        <h2>About CIAAN</h2>
+        <p>CIAAN is a simple web browser designed for speed and security. However, please note that CIAAN does not support YouTube or other streaming services, and certain content may not work properly.</p>
+    </div>
+
+</body>
+</html>
